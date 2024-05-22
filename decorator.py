@@ -5,7 +5,7 @@ def logging(func):
         print(f"calling function {__name__} with args = {args}, kwargs = {kwargs}" )
         result =  func(*args,**kwargs)
         print(f"results from the function {__name__} is {result}")
-        return result
+        #return result
     return mfx
 
 
