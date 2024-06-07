@@ -9,6 +9,15 @@ jobs:
       - run :
           name : Run hello.py
           command: python hello.py
+  
+  run-bye:
+    docker:
+     - image: circleci/python:3.8
+    steps:
+      - checkout
+      - run :
+          name : Run bye.py
+          command: python bye.py
 
 workflows:
   version: 2
