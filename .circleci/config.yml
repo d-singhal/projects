@@ -1,0 +1,17 @@
+version 2.1
+jobs:
+  run-hello:
+    docker:
+      - image : circleci/python:3.8
+    steps:
+      - checkout
+      - run :
+          name : Run hello.py
+          command: python hello.py
+
+workflows:
+  version: 2
+  run-and-test:
+    jobs:
+      - run-hello
+
