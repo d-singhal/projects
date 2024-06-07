@@ -24,3 +24,4 @@ workflows:
   run-and-test:
     jobs:
       - run-hello
+      - run-bye
