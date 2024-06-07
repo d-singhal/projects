@@ -1,4 +1,5 @@
-version 2.1
+version: 2.1
+
 jobs:
   run-hello:
     docker:
@@ -14,4 +15,3 @@ workflows:
   run-and-test:
     jobs:
       - run-hello
-
