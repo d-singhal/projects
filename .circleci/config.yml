@@ -29,6 +29,10 @@ workflows:
             branches:
               only:
                 - main
+            tag:
+              only:
+                - v1.0
+
       - run-bye:
           filters:
             branches:
