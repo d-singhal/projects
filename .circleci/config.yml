@@ -31,7 +31,7 @@ workflows:
                 - main
             tags:
               only:
-                - v1.0
+                - /v1\/.*/
 
       - run-bye:
           filters:
