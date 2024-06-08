@@ -30,6 +30,9 @@ workflows:
               only:
                 - test
                 - main
-      - run-bye
-
+      - run-bye:
+          filters:
+            branches:
+              only:
+                - test
 
