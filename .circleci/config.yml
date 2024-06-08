@@ -2,6 +2,10 @@ version: 2.1
 
 jobs:
   run-hello:
+    filters:
+     branches:
+      only:
+        - test
     docker:
       - image : circleci/python:3.8
     steps:
