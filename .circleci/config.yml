@@ -15,6 +15,7 @@ jobs:
           command: python hello.py
   
   run-bye:
+
     docker:
      - image: circleci/python:3.8
     steps:
@@ -27,5 +28,14 @@ workflows:
   version: 2
   run-and-test:
     jobs:
-      - run-hello
-      - run-bye
+      - run-hello:
+          filters:
+            branches:
+              only:
+                - test
+      - run-bye:
+          filters:
+            branches:
+              only:
+                - test
+
