@@ -32,7 +32,7 @@ workflows:
           filters:
             branches:
               only:
-                - test
+                - main
       - run-bye:
           filters:
             branches:
