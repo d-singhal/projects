@@ -15,6 +15,10 @@ jobs:
           command: python hello.py
   
   run-bye:
+    filters:
+      branches:
+        only:
+          - test
     docker:
      - image: circleci/python:3.8
     steps:
