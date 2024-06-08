@@ -29,7 +29,7 @@ workflows:
             branches:
               only:
                 - main
-            tag:
+            tags:
               only:
                 - v1.0
 
