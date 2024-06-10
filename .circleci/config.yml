@@ -27,9 +27,7 @@ workflows:
       - run-hello:
           filters:
             branches:
-              only:
-                - main
-                - test
+              ignore: /.*/
             tags:
               only: /^v[0-9]+\.[0-9]+\.[0-9]+$/
                 
@@ -37,8 +35,6 @@ workflows:
       - run-bye:
           filters:
             branches:
-              only:
-                - test
-                - main
+              ignore: /.*/
             tags:
               only: /^v[0-9]+\.[0-9]+\.[0-9]+$/
