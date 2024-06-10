@@ -31,8 +31,7 @@ workflows:
                 - main
                 - test
             tags:
-              only:
-                - /^v[0-9]+\.*+$/
+              only: /^v[0-9]+\.*+$/
                 
 
       - run-bye:
@@ -42,5 +41,4 @@ workflows:
                 - test
                 - main
               tags:
-                only:
-                  - /^v[0-9]+\.*+$/
+                only: /^v[0-9]+\.*+$/
