@@ -29,13 +29,18 @@ workflows:
             branches:
               only:
                 - main
+                - test
             tags:
               only:
-                - /v1\/.*/
+                - /^v[0-9]+\.*+$/
+                
 
       - run-bye:
           filters:
             branches:
               only:
                 - test
-
+                - main
+              tags:
+                only:
+                  - /^v[0-9]+\.*+$/
