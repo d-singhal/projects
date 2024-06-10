@@ -40,5 +40,5 @@ workflows:
               only:
                 - test
                 - main
-              tags:
-                only: /^v[0-9]+\.*+$/
+            tags:
+              only: /^v[0-9]+\.*+$/
